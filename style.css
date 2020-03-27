@@ -4,6 +4,13 @@ body {
     height: 100%;
 }
 
+
+/* Supermercado */
+
+#conteudo {
+    padding: 5%;
+}
+
 .produtos {
     width: 100%;
     display: grid;
@@ -14,11 +21,50 @@ body {
     gap: 1vw;
 }
 
+.secaoprincipal {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3%;
+}
+
+.itemcomida {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+}
+
 .infoprodutos {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.imagemsecao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #734939;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.linksecao {
+    text-decoration: none;
+    display: flex;
+}
+
+h2 {
+    margin: 1% 0;
 }
 
 .item {
@@ -35,12 +81,16 @@ img {
     width: 100%;
     border: 1px solid;
 }
-*{
+
+
+/* Index */
+
+* {
     padding: 0;
     margin: 0;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
     list-style: none;
@@ -50,26 +100,26 @@ img {
 }
 
 .nav li a,
-.subnav li a{
+.subnav li a {
     text-decoration: none;
     color: #592411;
 }
 
 .nav li:nth-child(3),
-.nav li:nth-child(4){
+.nav li:nth-child(4) {
     margin: 0 5vw;
 }
 
-.nav li:nth-child(2){
+.nav li:nth-child(2) {
     margin-left: 10vw;
     margin-right: 5vw;
 }
 
-.nav li:first-child{
+.nav li:first-child {
     font-size: 2rem;
 }
 
-.nav li input{
+.nav li input {
     border: none;
     border-bottom: #592411 solid 2px;
     background-color: #F2F2F2;
@@ -78,15 +128,16 @@ img {
     outline: none;
 }
 
-.canto{
+.canto {
     margin-left: auto;
     align-self: flex-end;
 }
-.canto:last-child{
+
+.canto:last-child {
     margin-right: 20px;
 }
 
-.subnav{
+.subnav {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -95,14 +146,17 @@ img {
     color: #592411;
     background-color: #F2F2F2;
 }
-.subnav > li{
+
+.subnav>li {
     margin: 0 30vh;
 }
-footer{
+
+footer {
     width: 100vw;
     margin: 0 auto;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -111,16 +165,18 @@ footer{
     color: #592411;
     background-color: #F2F2F2;
 }
-.footer li ul{
+
+.footer li ul {
     list-style: none;
     margin-left: 5px;
     padding: 10px 0;
 }
 
-.footer li ul li{
+.footer li ul li {
     padding: 10px 0;
 }
-.footer > li:last-child,
-.footer > li:first-child{
+
+.footer>li:last-child,
+.footer>li:first-child {
     margin: 0 auto;
 }
