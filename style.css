@@ -232,7 +232,7 @@ h5 {
     display: flex;
 }
 
-img {
+.produtos img {
     width: 100%;
     border: 1px solid;
 }
@@ -245,7 +245,12 @@ img {
     margin: 0;
 }
 
+/* nav */
+
+
+
 .nav {
+
     display: flex;
     align-items: center;
     list-style: none;
@@ -285,8 +290,16 @@ img {
 
 .canto {
     margin-left: auto;
-    align-self: flex-end;
+  
 }
+
+.canto:last-child{
+    margin-left: 10px;
+}
+
+/* footer */
+
+
 
 .canto:last-child {
     margin-right: 20px;
@@ -308,6 +321,7 @@ img {
 
 footer {
     width: 100vw;
+
     margin: 0 auto;
 }
 
@@ -317,8 +331,8 @@ footer {
     justify-content: center;
     list-style: none;
     padding: 20px;
-    color: #592411;
-    background-color: #F2F2F2;
+    color: #F2F2F2;
+    background-color: #8C695D;
 }
 
 .footer li ul {
@@ -327,7 +341,16 @@ footer {
     padding: 10px 0;
 }
 
+
+footer a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+
+
 .footer li ul li {
+
     padding: 10px 0;
 }
 
@@ -335,3 +358,134 @@ footer {
 .footer>li:first-child {
     margin: 0 auto;
 }
+
+/* cover */
+.cover{
+    text-align: center;
+}
+
+/* Encontre a loja mais próxima */
+.onde_encontrar{
+    text-align: center;
+    background-color: #F2F2F2;
+    height: 30vh;
+    color: #734939;
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+.onde_encontrar > p{
+    margin: 20px auto;
+    font-size: 2rem;
+}
+.onde_encontrar > input{
+    margin: 20px auto;
+    font-size: 2rem;
+    font-family: inherit;
+    color: #592411;
+    outline: none;
+    border: none;
+    background-color: #F2F2F2;
+    border-bottom: 2px solid #734939;    ;
+}
+
+/* Vantagens */
+.vantagens{
+    background-color: #BFACA4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #592411;
+    font-size: 2rem;
+    padding: 50px 30px;
+}
+
+.vantagens div img{
+    width: 80%;
+    border-radius: 100%;
+}
+/* Passo a passo */
+.passo-passo{
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #592411;
+    font-size: 2rem;
+    padding: 50px 30px;
+
+}
+
+.passo-passo img{
+    width: 70%;
+    border-radius: 100%;
+    border: #BFACA4 solid 1px;
+}
+
+.subnav{
+    display: none;       
+}
+
+@media screen and (max-width: 800px){
+    .nav{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 20px;
+        color: #592411;
+        background-color: #F2F2F2;
+    }
+    .subnav{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 20px;
+        color: #592411;
+        background-color: #F2F2F2;    
+    }
+    .nav li a,
+    .subnav li a{
+        text-decoration: none;
+        color: #592411;
+    }
+    
+    .nav li:nth-child(3),
+    .nav li:nth-child(4){
+        display: none;
+    }
+    
+    .nav li:nth-child(2){
+        margin-left: 10vw;
+        margin-right: 5vw;
+    }
+    
+    .nav li:first-child{
+        font-size: 2rem;
+    }
+    
+    .nav li input{
+        border: none;
+        border-bottom: #592411 solid 2px;
+        background-color: #F2F2F2;
+        font-family: inherit;
+        width: 20vw;
+        outline: none;
+    }
+    img{
+        max-width: 70vw;
+    }
+    .cover img{
+        max-width: 90vw;
+    }
+}
+@media screen and (max-width: 400px){
+    
+}
+
