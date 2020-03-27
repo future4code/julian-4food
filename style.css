@@ -4,22 +4,6 @@ body {
     height: 100%;
 }
 
-header {
-    background-color: #592411;
-    height: 10vh;
-    margin-bottom: 1%;
-    position: relative;
-    top: 0;
-}
-
-footer {
-    background-color: #734939;
-    height: 10vh;
-    /* margin-top: 1%; */
-    position: fixed;
-    bottom: 0;
-}
-
 .produtos {
     width: 100%;
     display: grid;
@@ -50,4 +34,93 @@ h5 {
 img {
     width: 100%;
     border: 1px solid;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    color: #592411;
+    background-color: #F2F2F2;
+}
+
+.nav li a,
+.subnav li a{
+    text-decoration: none;
+    color: #592411;
+}
+
+.nav li:nth-child(3),
+.nav li:nth-child(4){
+    margin: 0 5vw;
+}
+
+.nav li:nth-child(2){
+    margin-left: 10vw;
+    margin-right: 5vw;
+}
+
+.nav li:first-child{
+    font-size: 2rem;
+}
+
+.nav li input{
+    border: none;
+    border-bottom: #592411 solid 2px;
+    background-color: #F2F2F2;
+    font-family: inherit;
+    width: 20vw;
+    outline: none;
+}
+
+.canto{
+    margin-left: auto;
+    align-self: flex-end;
+}
+.canto:last-child{
+    margin-right: 20px;
+}
+
+.subnav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    color: #592411;
+    background-color: #F2F2F2;
+}
+.subnav > li{
+    margin: 0 30vh;
+}
+footer{
+    width: 100vw;
+    margin: 0 auto;
+}
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    color: #592411;
+    background-color: #F2F2F2;
+}
+.footer li ul{
+    list-style: none;
+    margin-left: 5px;
+    padding: 10px 0;
+}
+
+.footer li ul li{
+    padding: 10px 0;
+}
+.footer > li:last-child,
+.footer > li:first-child{
+    margin: 0 auto;
 }
