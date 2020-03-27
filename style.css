@@ -1,8 +1,156 @@
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+
+    .produtos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+        gap: 1vw;
+    }
+    
+    .infoprodutos {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .item {
+        border: 1px solid;
+        margin: 20px;
+    }
+    
+    h4,
+    h5 {
+        display: flex;
+    }
+    
+    img {
+        width: 100%;
+        border: 1px solid;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 20px;
+        color: #592411;
+        background-color: #F2F2F2;
+    }
+    
+    .nav li a,
+    .subnav li a {
+        text-decoration: none;
+        color: #592411;
+    }
+    
+    .nav li:nth-child(3),
+    .nav li:nth-child(4) {
+        margin: 0 5vw;
+    }
+    
+    .nav li:nth-child(2) {
+        margin-left: 10vw;
+        margin-right: 5vw;
+    }
+    
+    .nav li:first-child {
+        font-size: 2rem;
+    }
+    
+    .nav li input {
+        border: none;
+        border-bottom: #592411 solid 2px;
+        background-color: #F2F2F2;
+        font-family: inherit;
+        width: 20vw;
+        outline: none;
+    }
+    /* pratos variados */
+    
+    h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 6vh;
+        color: #5a5a5a;
+    }
+    /* pratos variados */
+    
+    #pratos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        color: #5a5a5a;
+        margin: 6vh;
+    }
+    /* pratos variados */
+    
+    #pratos img {
+        width: 50%;
+        border: none;
+    }
+    
+    .canto {
+        margin-left: auto;
+        align-self: flex-end;
+    }
+    
+    .canto:last-child {
+        margin-right: 20px;
+    }
+    
+    .subnav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        list-style: none;
+        padding: 20px;
+        color: #592411;
+        background-color: #F2F2F2;
+    }
+    
+    .subnav>li {
+        margin: 0 30vh;
+    }
+    
+    footer {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        list-style: none;
+        padding: 20px;
+        color: #592411;
+        background-color: #F2F2F2;
+    }
+    
+    .footer li ul {
+        list-style: none;
+        margin-left: 5px;
+        padding: 10px 0;
+    }
+    
+    .footer li ul li {
+        padding: 10px 0;
+    }
+    
+    .footer>li:last-child,
+    .footer>li:first-child {
+        margin: 0 auto;
+    }
 
 
 /* Supermercado */
