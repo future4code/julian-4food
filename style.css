@@ -159,6 +159,13 @@
     padding: 5%;
 }
 
+
+/* Supermercado */
+
+#conteudo {
+    padding: 5%;
+}
+
 .produtos {
     width: 100%;
     display: grid;
